@@ -36,8 +36,8 @@ const NavBar = () => {
             <ul className="space-y-6 text-center ">
               <li>
                 <a
-                  href="/"
-                  className="text-white text-[18px] hover:text-[#40C2FF]"
+                  href="#features"
+                  className="text-white normal hover:text-[#40C2FF]"
                   onClick={toggleMenu}
                 >
                   Features
@@ -46,7 +46,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#HowItWorks"
-                  className="block text-white hover:text-red-500"
+                  className="block text-white normal hover:text-[#40C2FF]"
                   onClick={toggleMenu}
                 >
                   How it Works
@@ -55,7 +55,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#pricing"
-                  className="block text-white hover:text-red-500"
+                  className="block text-white normal hover:text-[#40C2FF]"
                   onClick={toggleMenu}
                 >
                   Pricing
@@ -64,7 +64,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#faq"
-                  className="block text-white hover:text-red-500"
+                  className="block text-white normal hover:text-[#40C2FF]"
                   onClick={toggleMenu}
                 >
                   FAQ
@@ -72,19 +72,19 @@ const NavBar = () => {
               </li>
             </ul>
             <div className="block lg:hidden">
-              <Button >Create Dashboard</Button>
+              <Button >Start Free Trial </Button>
             </div>
           </div>
         </div>
       )}
       <ul className="hidden lg:flex gap-4">
         <li>
-          <a href="/" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
+          <a href="#features" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
             Features
           </a>
         </li>
         <li>
-          <a href="#HowItWorks" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
+          <a href="#howItWorks" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
             How it Works
           </a>
         </li>

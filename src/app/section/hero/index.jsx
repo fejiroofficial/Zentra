@@ -1,8 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import avatar from "@/app/asset/svg/avatar.svg";
-import companyLogos from "@/app/asset/svg/company.svg";
 import Button from "@/app/components/button";
+import piggy from "../../asset/header/piggy.svg";
+import axa from "../../asset/header/axa.svg";
+import flutter from "../../asset/header/flutter.svg";
+import talent from "../../asset/header/talentQL.svg";
+import kora from "../../asset/header/kora.svg";
 
 export default function Hero() {
   return (
@@ -19,26 +23,35 @@ export default function Hero() {
           Grow Better with Your All in One CRM Platform
         </h1>
 
-        <h4 className="text-[16px] md:text-[18px] font-medium max-w-[598px] text-white opacity-80">
+        <h4 className="normal max-w-[598px] text-white opacity-80">
           Unify your sales, marketing, and support teams with one easy-to-use
           platform built to scale with your business.
         </h4>
 
         <div className="flex flex-wrap justify-center gap-6 pt-6 pb-16">
-          <Button className="bg-[#EFEFEF] text-black text-[16px] md:text-[18px] font-medium px-6 py-3 rounded-[8px] cursor-pointer">
+          <Button className="w-full lg:w-[170px] bg-[#EFEFEF] text-black normal px-6 py-3 rounded-[8px] cursor-pointer">
             Start Free Trial
           </Button>
-          <Button className="border border-[#EFEFEF] text-white text-[16px] md:text-[18px] font-medium px-6 py-3 rounded-[8px]">
+          <Button className="w-full lg:w-[170px] border border-[#EFEFEF] text-white normal px-6 py-3 rounded-[8px]">
             Get Template
           </Button>
         </div>
       </div>
 
   
-      <footer className="mt-16 flex flex-col items-center gap-2">
-        <h4 className="text-white text-[16px] font-medium">Trusted by:</h4>
-        <Image src={companyLogos} alt="Company Logos" />
-      </footer>
+      <footer className="md:mt-20 flex flex-col items-center gap-2 overflow-scroll lg:overflow-hidden">
+  <h4 className="text-white text-[16px] font-medium mb-2">Trusted by:</h4>
+  <div className="relative w-full overflow-x-auto">
+    <div className="flex gap-[24px] lg:gap-[40px] items-center animate-scroll whitespace-nowrap w-max">
+      <Image src={piggy} alt="Piggy" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
+      <Image src={flutter} alt="Flutter" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
+      <Image src={axa} alt="AXA" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
+      <Image src={kora} alt="Kora" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
+      <Image src={talent} alt="TalentQL" width={50} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
+    </div>
+  </div>
+</footer>
+
     </main>
   );
 }

@@ -25,6 +25,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter-tight)
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
 
 .text-gradient-dark-blue {
   background: linear-gradient(to bottom, #080035, #40C2FF);
@@ -32,4 +44,10 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+h2 {
+  @apply text-[30px] lg:text-[48px] lg:leading-tight font-semibold text-[#212121];
+}
+.normal{
+  @apply text-[16px] lg:text-[18px] tracking-tight;
 }

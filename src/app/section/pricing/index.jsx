@@ -2,11 +2,12 @@
 
 import React, { useState } from 'react';
 import PriceCard from '@/app/components/price';
-import TagLabel from '@/app/components/tagLabel';
+// import TagLabel from '@/app/components/tagLabel';
+import TagLabel from '../../components/tagLabel'
 
 export default function Pricing() {
   const [selectedCard, setSelectedCard] = useState('Professional Plan');
-  const [billingCycle, setBillingCycle] = useState('month'); // default is a string
+  const [billingCycle, setBillingCycle] = useState('month');
 
   const handleCardClick = (cardTitle) => {
     setSelectedCard(cardTitle);
@@ -109,13 +110,13 @@ export default function Pricing() {
   const currentPlans = pricingData[billingCycle] || [];
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto' id='#pricing'>
       <div className="flex flex-col items-center gap-6">
         <TagLabel text="Pricing" />
         <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold text-center max-w-2xl mt-4 text-black leading-tight">
           Flexible Plans for Businesses of All Sizes
         </h2>
-        <div className="flex justify-center space-x-4 border border-[#080035] max-w-[222px] rounded-[40px] p-2 ">
+        <div className="flex justify-center space-x-4 border border-[#080035] max-w-[222px] rounded-[40px] p-1 ">
         <button
           onClick={() => setBillingCycle('month')}
           className={`px-4 py-2 rounded-full ${

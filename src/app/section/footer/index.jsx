@@ -9,18 +9,18 @@ import zentra from '../../asset/svg/zentra.svg'
 export default function Footer() {
   return (
     <>
-      <div className='container mx-auto py-16'>
-        <div className='flex flex-col lg:flex-row justify-between items-center text-[#212121] gap-12'>
-          <div className='text-center lg:text-left space-y-6'>
-            <h2 className='text-[40px] font-medium'>LOGO</h2>
-            <h2 className='text-[40px] font-bold leading-tight'>
-              Sell smarter. Move faster. <br />
+      <div className='container mx-auto py-16 px-6'>
+        <div className='flex flex-col lg:flex-row justify-between lg:items-center text-[#212121] gap-12'>
+          <div className='lg:text-left space-y-6'>
+            <h2>Zentra</h2>
+            <h2 className='text-[30px] lg:text-[40px] font-bold leading-tight text-wrap max-w-md'>
+              Sell smarter. Move faster.
               Stay <span className='text-gradient-dark-blue'>ahead</span>
             </h2>
           </div>
 
-          <div className='flex flex-col items-center lg:items-end gap-6'>
-            <div className='flex flex-wrap lg:flex-nowrap gap-4 lg:gap-6 justify-center'>
+          <div className='flex flex-col lg:items-end gap-6 justify-between lg:space-y-8'>
+            <div className='flex flex-col lg:flex-row gap-4 lg:gap-6'>
               <p className='text-[18px] font-medium'>Features</p>
               <p className='text-[18px] font-medium'>How it Works</p>
               <p className='text-[18px] font-medium'>Pricing</p>

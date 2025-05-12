@@ -78,7 +78,7 @@ export const testimonials = [
   },
   {
     id: 10,
-    title: 'Efficiency Boost 10',
+    title: 'Efficiency',
     avatar: josh,
     avaterName: 'Josh T.',
     position: 'Co-Founder @ Heavy Tech',
@@ -86,7 +86,7 @@ export const testimonials = [
   },
   {
     id: 11,
-    title: 'Efficiency Boost 11',
+    title: 'Efficiency',
     avatar: alice,
     avaterName: 'Alice D.',
     position: 'CTO @ Innovate Labs',
@@ -94,7 +94,7 @@ export const testimonials = [
   },
   {
     id: 12,
-    title: 'Efficiency Boost 12',
+    title: 'Efficiency',
     avatar: john,
     avaterName: 'John R.',
     position: 'Lead Engineer @ Tech Solutions',
@@ -102,7 +102,7 @@ export const testimonials = [
   },
   {
     id: 13,
-    title: 'Efficiency Boost 13',
+    title: 'Efficiency',
     avatar: fatima,
     avaterName: 'Fatima A',
     position: 'Sales Director @ Microsoft',
@@ -110,7 +110,7 @@ export const testimonials = [
   },
   {
     id: 14,
-    title: 'Efficiency Boost 14',
+    title: 'Efficiency',
     avatar: josh,
     avaterName: 'Josh T.',
     position: 'Co-Founder @ Heavy Tech',

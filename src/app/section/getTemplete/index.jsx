@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function GetTemplete() {
   return (
-    <div className='relative flex justify-center items-center bg-[#080035] rounded-[48px] w-full h-[656px] container mx-auto px-16'>
+    <div className='relative flex justify-center items-center bg-[#080035] rounded-[24px] lg:rounded-[48px] w-full h-[556px] lg:h-[656px] container md:mx-auto px-16'>
         <div className=''>
 <Image src={line} alt='' className='absolute top-0 right-[45%]' />
 <Image src={Sline} alt=''  className='absolute top-0 right-[46%]'/>

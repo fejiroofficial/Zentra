@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import TagLabel from '@/app/components/tagLabel';
-
+// import TagLabel from '@/app/components/tagLabel';
+import TagLabel from '../../components/tagLabel'
 import one from '@/app/asset/features/one.svg';
 import two from '@/app/asset/features/two.svg';
 import three from '@/app/asset/features/three.svg';
@@ -13,10 +13,10 @@ export default function Features() {
   const images = [one, two, three, four, five, six];
 
   return (
-    <div className="py-16 container mx-auto">
+    <div className="py-16 container mx-auto" id='features'>
       <div className="flex flex-col items-center text-black px-4">
         <TagLabel text="Features" />
-        <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold text-center max-w-3xl mt-4">
+        <h2 className="text-center max-w-3xl mt-4">
           Explore the All-in-One CRM Growth Platform
         </h2>
       </div>

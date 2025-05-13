@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Button from "../../components/Button";
-import NavBar from "@/app/components/navbar";
+import NavBar from "../../components/navbar";
+import Button from "../../components/button";
 
 const Header = () => {
   return (
@@ -9,9 +9,9 @@ const Header = () => {
     <header className=" lg:py-6 rounded-md lg:px-2 lg:mx-20">
  
 
-      <div className="flex justify-between items-center px-2 lg:px-6">
+      <div className="flex justify-between items-center px-2 py-4 lg:px-2 lg:py-2">
         <Link href="/" className="flex items-center gap-2">
-     <p className="text-[30px] font-medium text-[#EFEFEF]">Zentra</p>
+     <p className="text-[30px] font-medium text-[#EFEFEF] pl-3">Zentra</p>
        
         </Link>
         <div className="lg:border-[1px] border-[#40C2FF] px-6 py-2 rounded-[30px] max-h-[42px]">

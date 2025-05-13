@@ -1,8 +1,8 @@
 'use client';
 
-import TagLabel from '@/app/components/tagLabel';
 import React, { useState } from 'react';
 import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri';
+import TagLabel from '../../components/tagLabel';
 
 const faqs = [
   {

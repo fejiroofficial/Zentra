@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import menu from "@/app/asset/svg/menu.svg";
+
+import menu from "../../asset/svg/menu.svg";
 import Image from "next/image";
-import Button from "@/app/components/button";
+import Button from "../button";
 
 
 const NavBar = () => {
@@ -20,11 +21,11 @@ const NavBar = () => {
         onClick={toggleMenu}
         aria-label="Toggle Menu"
       >
-        <Image src={menu} alt="menu-icon" />
+        <Image src={menu} alt="menu-icon" width={30} height={30}/>
       </button>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center z-50">
+        <div className="fixed inset-0 bg-[#080035] bg-opacity-80 flex justify-center z-50">
           <div className="flex flex-col justify-between items-center relative top-0 rounded-lg shadow-lg w-full h-1/2 p-6">
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
@@ -45,7 +46,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#HowItWorks"
+                  href="#howItWorks"
                   className="block text-white normal hover:text-[#40C2FF]"
                   onClick={toggleMenu}
                 >
@@ -72,7 +73,7 @@ const NavBar = () => {
               </li>
             </ul>
             <div className="block lg:hidden">
-              <Button >Start Free Trial </Button>
+              <Button className='bg-[#EFEFEF] text-black normal p-3 max-w-[170px] rounded-[8px]'>Start Free Trial </Button>
             </div>
           </div>
         </div>

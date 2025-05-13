@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import image from "@/app/asset/svg/about.svg";
-import icon from '@/app/asset/svg/tick.svg';
-import Button from "@/app/components/button";
-// import TagLabel from "@/app/components/tagLabel";
+import image from "../../asset/svg/about.svg";
+import icon from '../../asset/svg/tick.svg';
 import TagLabel from '../../components/tagLabel'
+import Button from "../../components/button";
 export default function About() {
     const features = [
         "A centralized hub where all customer interactions and data live",

@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
-import banner from '@/app/asset/svg/banner.svg'
-import line from '@/app/asset/svg/line.svg'
-import Sline from '@/app/asset/svg/shorterLine.svg'
-// import TagLabel from '@/app/components/tagLabel';
+import banner from '../../asset/svg/banner.svg'
+import line from '../../asset/svg/line.svg'
+import Sline from '../../asset/svg/shorterLine.svg'
 import TagLabel from '../../components/tagLabel'
 import Button from '@/app/components/button';
 

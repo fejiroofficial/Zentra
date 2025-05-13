@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-// import TagLabel from '@/app/components/tagLabel';
 import TagLabel from '../../components/tagLabel'
-import one from '@/app/asset/features/one.svg';
-import two from '@/app/asset/features/two.svg';
-import three from '@/app/asset/features/three.svg';
-import four from '@/app/asset/features/four.svg';
-import five from '@/app/asset/features/five.svg';
-import six from '@/app/asset/features/six.svg';
+import one from '../../asset/features/one.svg';
+import two from '../../asset/features/two.svg';
+import three from '../../asset/features/three.svg';
+import four from '../../asset/features/four.svg';
+import five from '../../asset/features/five.svg';
+import six from '../../asset/features/six.svg';
 
 export default function Features() {
   const images = [one, two, three, four, five, six];

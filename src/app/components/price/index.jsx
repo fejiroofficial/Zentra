@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import tick from "@/app/asset/svg/tick.svg";
-import white from "@/app/asset/svg/white-tick.svg";
+import tick from "../../asset/svg/tick.svg";
+import white from "../../asset/svg/white-tick.svg";
 
 const PriceCard = ({
   title,

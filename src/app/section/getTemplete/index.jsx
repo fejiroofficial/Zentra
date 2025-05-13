@@ -1,10 +1,9 @@
 import React from 'react'
-import Button from '../../components/Button'
-// import background from "@/app/asset/svg/background.svg"
 import line from '../../asset/svg/line.svg'
 import Sline from '../../asset/svg/shorterLine.svg'
 import background from '../../asset/svg/background.svg'
 import Image from 'next/image';
+import Button from '../../components/button';
 
 export default function GetTemplete() {
   return (

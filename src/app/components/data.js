@@ -1,7 +1,7 @@
-import fatima from '@/app/asset/testimonial/fatima.svg';
-import josh from '@/app/asset/testimonial/josh.svg';
-import alice from '@/app/asset/testimonial/alice.svg';
-import john from '@/app/asset/testimonial/micheal.svg';
+import fatima from '../asset/testimonial/fatima.svg';
+import josh from '../asset/testimonial/josh.svg';
+import alice from '../asset/testimonial/alice.svg';
+import john from '../asset/testimonial/micheal.svg';
 
 export const testimonials = [
   {

@@ -4,7 +4,7 @@ import banner from '../../asset/svg/banner.svg'
 import line from '../../asset/svg/line.svg'
 import Sline from '../../asset/svg/shorterLine.svg'
 import TagLabel from '../../components/tagLabel'
-import Button from '@/app/components/button';
+import Button from '../../components/button';
 
 export default function HowItWorks() {
     const HowItWorksDetails = [

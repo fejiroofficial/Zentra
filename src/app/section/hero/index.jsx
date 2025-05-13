@@ -10,8 +10,8 @@ import kora from "../../asset/header/kora.svg";
 
 export default function Hero() {
   return (
-    <main className="flex flex-col justify-between flex-1 items-center text-center py-16 px-4">
-      <div className="flex flex-col items-center justify-center gap-6 pt-10">
+    <main className="flex flex-col justify-between flex-1 items-center text-center py-6 md:py-16 px-4">
+      <div className="flex flex-col items-center justify-center gap-6 md:pt-10">
         <div className="flex items-center gap-2">
           <Image src={avatar} alt="avatar-img" />
           <p className="text-[14px] font-medium text-white opacity-70 text-start">

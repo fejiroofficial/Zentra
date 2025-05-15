@@ -33,7 +33,21 @@ body {
     transform: translateX(-50%);
   }
 }
+@keyframes testimonials-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
+.animate-testimonials {
+  animation: testimonials-scroll 25s linear infinite;
+}
+.animate-testimonials:hover {
+  animation-play-state: paused;
+}
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
@@ -50,4 +64,7 @@ h2 {
 }
 .normal{
   @apply text-[16px] lg:text-[18px] tracking-tight;
+}
+.sub-tittle{
+  @apply text-[20px] lg:text-[24px] tracking-tight font-bold text-[#EFEFEF];
 }

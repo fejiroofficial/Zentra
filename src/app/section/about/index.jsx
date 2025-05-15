@@ -20,7 +20,7 @@ export default function About() {
         <h2>What does Zentra do?</h2>
 
         <div className="flex flex-col lg:flex-row md:items-center justify-between gap-10 lg:mt-8">
-          <div className="max-w-xl text-left space-y-6">
+          <div className="lg:max-w-2xl text-left space-y-6">
             <h3 className="text-[24px] md:text-[30px] font-semibold">
               Disconnected tools are costing your team time, money, and customers.
             </h3>

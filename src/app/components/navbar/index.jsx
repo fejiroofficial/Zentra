@@ -71,10 +71,11 @@ const NavBar = () => {
                   FAQ
                 </a>
               </li>
-            </ul>
-            <div className="block lg:hidden">
-              <Button className='bg-[#EFEFEF] text-black normal p-3 max-w-[170px] rounded-[8px]'>Start Free Trial </Button>
+              <div className="block lg:hidden">
+              <Button className='bg-[#EFEFEF] text-black normal p-3 w-full rounded-[8px]'>Start Free Trial </Button>
             </div>
+            </ul>
+        
           </div>
         </div>
       )}

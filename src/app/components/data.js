@@ -22,11 +22,11 @@ export const testimonials = [
   },
   {
     id: 3,
-    title: 'Efficiency Boost 3',
+    title: 'Unified Workflow',
     avatar: alice,
     avaterName: 'Alice D.',
     position: 'CTO @ Innovate Labs',
-    description: '“Zentra has cut down our processing time by half. We are now able to focus more on scaling the business.”',
+    description: '"Finally, our marketing, sales, and support teams are all in sync. It’s been a huge relief to stop bouncing between platforms."',
   },
   {
     id: 4,
@@ -46,11 +46,11 @@ export const testimonials = [
   },
   {
     id: 6,
-    title: 'Efficiency Boost 6',
+    title: 'Team Adoption',
     avatar: josh,
     avaterName: 'Josh T.',
     position: 'Co-Founder @ Heavy Tech',
-    description: '“We were up and running in less than an hour. It connected perfectly with our tools, and our team didn’t need any extra training."',
+    description: '"We’ve tried a few CRMs before, but this one actually stuck. Everyone on our team uses it with no complaints, no confusion, just results."',
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ export const testimonials = [
   },
   {
     id: 11,
-    title: 'Efficiency',
+    title: 'Easy Integration',
     avatar: alice,
     avaterName: 'Alice D.',
     position: 'CTO @ Innovate Labs',
@@ -110,7 +110,7 @@ export const testimonials = [
   },
   {
     id: 14,
-    title: 'Efficiency',
+    title: 'Easy Integration',
     avatar: josh,
     avaterName: 'Josh T.',
     position: 'Co-Founder @ Heavy Tech',
@@ -118,7 +118,7 @@ export const testimonials = [
   },
   {
     id: 15,
-    title: 'Efficiency Boost 15',
+    title: 'Unified Workflow',
     avatar: alice,
     avaterName: 'Alice D.',
     position: 'CTO @ Innovate Labs',
@@ -134,7 +134,7 @@ export const testimonials = [
   },
   {
     id: 17,
-    title: 'Efficiency Boost 17',
+    title: 'Unified Workflow',
     avatar: fatima,
     avaterName: 'Fatima A',
     position: 'Sales Director @ Microsoft',
@@ -142,7 +142,7 @@ export const testimonials = [
   },
   {
     id: 18,
-    title: 'Efficiency Boost 18',
+    title: 'Easy Integration',
     avatar: josh,
     avaterName: 'Josh T.',
     position: 'Co-Founder @ Heavy Tech',
@@ -150,7 +150,7 @@ export const testimonials = [
   },
   {
     id: 19,
-    title: 'Efficiency Boost 19',
+    title: 'Unified Workflow',
     avatar: alice,
     avaterName: 'Alice D.',
     position: 'CTO @ Innovate Labs',
@@ -158,7 +158,7 @@ export const testimonials = [
   },
   {
     id: 20,
-    title: 'Efficiency Boost 20',
+    title: 'Easy Integration',
     avatar: john,
     avaterName: 'John R.',
     position: 'Lead Engineer @ Tech Solutions',

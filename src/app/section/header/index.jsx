@@ -5,11 +5,11 @@ import Button from "../../components/button";
 
 const Header = () => {
   return (
-    <div className="container lg:mx-auto">
+    <div className="lg:container lg:mx-auto">
     <header className=" lg:py-6 rounded-md lg:px-2 lg:mx-20">
  
 
-      <div className="flex justify-between items-center px-2 py-4 lg:px-2 lg:py-2">
+      <div className="flex justify-between items-center px-2 md:px-6 py-4 lg:px-2 lg:py-2">
         <Link href="/" className="flex items-center gap-2">
      <p className="text-[30px] font-medium text-[#EFEFEF] pl-3">Zentra</p>
        

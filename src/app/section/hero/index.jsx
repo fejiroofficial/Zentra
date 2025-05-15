@@ -39,10 +39,10 @@ export default function Hero() {
       </div>
 
   
-      <footer className="w-full lg:w-1/2 md:mt-20 flex flex-col items-center gap-2 overflow-scroll lg:overflow-hidden">
+      <footer className="w-full lg:w-1/2 md:mt-20 flex flex-col items-center gap-2 overflow-scroll md:overflow-hidden">
   <h4 className="text-white text-[16px] font-medium mb-2">Trusted by:</h4>
   <div className="relative w-full overflow-x-auto">
-    <div className="flex gap-[24px] lg:gap-[40px] items-center animate-scroll whitespace-nowrap w-max">
+    <div className="flex gap-[24px] lg:gap-[40px] justify-center items-center animate-scroll whitespace-nowrap lg:w-max">
       <Image src={piggy} alt="Piggy" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
       <Image src={flutter} alt="Flutter" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />
       <Image src={axa} alt="AXA" width={150} height={40} className="w-[151px] lg:w-[225px] h-[40px]" />

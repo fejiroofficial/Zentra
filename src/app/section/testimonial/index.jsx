@@ -1,44 +1,11 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { testimonials } from '../../components/data';
 import TagLabel from '../../components/tagLabel';
 
 export default function Testimonial() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const testimonialsCount = testimonials.length;
-  const containerRef = useRef(null);
-
-  const extendedTestimonials = [...testimonials, testimonials[0]];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => prev + 1);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const container = containerRef.current;
-
-    if (currentIndex === testimonialsCount && container) {
-      const handleTransitionEnd = () => {
-        container.style.transition = 'none';
-        setCurrentIndex(0);
-        container.style.transform = `translateX(0px)`;
-      };
-
-      container.addEventListener('transitionend', handleTransitionEnd, {
-        once: true,
-      });
-    } else if (container) {
-      container.style.transition = 'transform 0.5s ease-in-out';
-      container.style.transform = `translateX(-${currentIndex * 419}px)`;
-    }
-  }, [currentIndex, testimonialsCount]);
-
   return (
     <div className="px-6 lg:px-16 pb-6 py-16">
       <div className="flex flex-col items-center text-center mb-10">
@@ -50,23 +17,17 @@ export default function Testimonial() {
 
       <div className="overflow-x-hidden">
         <div
-          ref={containerRef}
-          className={`grid grid-rows-2 grid-flow-col gap-6 w-max`}
-          style={{
-            transform: `translateX(-${currentIndex * 419}px)`,
-          }}
+          className="grid grid-rows-2 grid-flow-col gap-6 w-max animate-testimonials"
         >
-          {extendedTestimonials.map((item, id) => (
+          {testimonials.map((item, id) => (
             <div
               key={id}
-              className="rounded-3xl p-6 bg-[#E3E3E3] w-[335px] lg:w-[419px] flex flex-col justify-between"
+              className="rounded-3xl p-6 bg-[#E3E3E3] w-[335px] md:w-[419px] h-[346px] flex flex-col justify-between"
             >
               <h3 className="text-[20px] lg:text-[24px] font-semibold text-[#212121] mb-2">
                 {item.title}
               </h3>
-              <p className="normal text-[#212121] mb-4">
-                {item.description}
-              </p>
+              <p className="text-[#212121] mb-4">{item.description}</p>
               <div className="flex items-center gap-3 mt-auto pt-6">
                 <Image
                   src={item.avatar}

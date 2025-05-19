@@ -79,24 +79,24 @@ const NavBar = () => {
           </div>
         </div>
       )}
-      <ul className="hidden lg:flex gap-4">
+      <ul className="hidden lg:flex gap-8">
         <li>
-          <a href="#features" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
+          <a href="#features" className="text-white normal hover:text-[#40C2FF] font-medium">
             Features
           </a>
         </li>
         <li>
-          <a href="#howItWorks" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
+          <a href="#howItWorks" className="text-white normal hover:text-[#40C2FF] font-medium">
             How it Works
           </a>
         </li>
         <li>
-          <a href="#pricing" className="text-white text-[18px] hover:text-[#40C2FF] font-medium">
+          <a href="#pricing" className="text-white normal hover:text-[#40C2FF] font-medium">
             Pricing
           </a>
         </li>
         <li>
-          <a href="#faq" className="text-white text-[18px] hover:text-[#40C2FF]">
+          <a href="#faq" className="text-white normal hover:text-[#40C2FF] font-medium">
             FAQ
           </a>
         </li>

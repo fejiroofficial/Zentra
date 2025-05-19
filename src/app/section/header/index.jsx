@@ -14,7 +14,7 @@ const Header = () => {
             </p>
           </Link>
 
-          <div className="hidden lg:block lg:fixed lg:top-8 left-1/2 -translate-x-1/2 z-50 bg-[#080035] border border-[#40C2FF] px-6 py-2 rounded-[30px] max-h-[42px]">
+          <div className=" hidden lg:flex items-center lg:fixed lg:top-8 left-1/2 -translate-x-1/2 z-50 bg-[#080035] border border-[#40C2FF] px-6 py-4 rounded-[30px] max-h-[42px]">
             <NavBar />
           </div>
 

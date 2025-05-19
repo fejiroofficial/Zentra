@@ -25,14 +25,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter-tight)
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 @keyframes testimonials-scroll {
   0% {
     transform: translateX(0%);
@@ -42,14 +34,27 @@ body {
   }
 }
 
+@keyframes testimonials-scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 .animate-testimonials {
   animation: testimonials-scroll 25s linear infinite;
 }
-.animate-testimonials:hover {
-  animation-play-state: paused;
+
+.animate-testimonials-reverse {
+  animation: testimonials-scroll-reverse 25s linear infinite;
 }
-.animate-scroll {
-  animation: scroll 20s linear infinite;
+
+.animate-testimonials:hover,
+.animate-testimonials-reverse:hover {
+  animation-play-state: paused;
 }
 
 .text-gradient-dark-blue {

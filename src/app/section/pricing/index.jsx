@@ -105,7 +105,6 @@ export default function Pricing() {
     ],
   };
 
-  // Extra safeguard to avoid runtime errors
   const currentPlans = pricingData[billingCycle] || [];
 
   return (

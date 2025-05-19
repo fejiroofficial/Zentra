@@ -1,9 +1,13 @@
+
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { testimonials } from '../../components/data';
+import TestimonialCard from '../../components/testimonialCard'
 import TagLabel from '../../components/tagLabel';
+
+const topRow = testimonials.filter((_, i) => i % 2 === 0);
+const bottomRow = testimonials.filter((_, i) => i % 2 !== 0);
 
 export default function Testimonial() {
   return (
@@ -15,38 +19,22 @@ export default function Testimonial() {
         </h2>
       </div>
 
-      <div className="overflow-x-hidden">
-        <div
-          className="grid grid-rows-2 grid-flow-col gap-6 w-max animate-testimonials"
-        >
-          {testimonials.map((item, id) => (
-            <div
-              key={id}
-              className="rounded-3xl p-6 bg-[#E3E3E3] w-[335px] md:w-[419px] h-[346px] flex flex-col justify-between"
-            >
-              <h3 className="text-[20px] lg:text-[24px] font-semibold text-[#212121] mb-2">
-                {item.title}
-              </h3>
-              <p className="text-[#212121] mb-4">{item.description}</p>
-              <div className="flex items-center gap-3 mt-auto pt-6">
-                <Image
-                  src={item.avatar}
-                  alt="avatar"
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
-                <div className="space-y-1">
-                  <h4 className="font-semibold text-[18px] text-black">
-                    {item.avaterName}
-                  </h4>
-                  <p className="text-[16px] text-[#626262]">{item.position}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <div className="overflow-x-hidden space-y-10">
+  {/* Top Row - scrolls left */}
+  <div className="flex gap-6 w-max animate-testimonials">
+    {[...topRow, ...topRow].map((item, id) => (
+      <TestimonialCard key={`top-${id}`} item={item} />
+    ))}
+  </div>
+
+  {/* Bottom Row - scrolls right */}
+  <div className="flex gap-6 w-max animate-testimonials-reverse">
+    {[...bottomRow, ...bottomRow].map((item, id) => (
+      <TestimonialCard key={`bottom-${id}`} item={item} />
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }

@@ -3,7 +3,7 @@ import two from "../../asset/features/two.svg";
 import Image from "next/image";
 export default function CardFeatures({ tittle, description, image }) {
   return (
-    <div className="relative flex flex-col justify-between items-center p-4 md:p-6 md:w-[418px] h-[369px] md:h-[442px] rounded-[40px] bg-[#080035]">
+    <div className="relative flex flex-col justify-between items-center p-4 md:p-6 md:w-[418px] h-[379px] md:h-[442px] rounded-[40px] bg-[#080035]">
       <div className="flex items-center justify-center ">
 
       <Image src={image} alt="image" className="object-contain absolute top-4" />

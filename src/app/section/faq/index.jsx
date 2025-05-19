@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between container mx-auto px-6 lg:px-16 py-16">
+    <div className="flex flex-col items-center justify-between container mx-auto px-6 lg:px-16 py-16" id='#faq'>
      <TagLabel text='FAQs' />
       <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold text-center mt-4 text-black leading-tight">
       You Asked, Zentra <br /> Answered

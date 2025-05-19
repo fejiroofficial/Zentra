@@ -37,7 +37,7 @@ export default function About() {
       ))}
     </div>
     <div >
-            <Button className="w-full lg:w-[170px] bg-[#080035] text-[#EFEFEF] p-2 rounded-[8px] text-[18px]">Start Free Trial</Button>
+            <Button className="w-full lg:w-[170px] bg-[#080035] text-[#EFEFEF] p-2 lg:p-4 rounded-[8px] text-[18px] hover:bg-black ">Start Free Trial</Button>
         </div>
           </div>
 

@@ -45,8 +45,8 @@ const PriceCard = ({
           onClick={handleClick}
           className={`cursor-pointer w-full py-3 rounded-md transition duration-300 text-[18px] ${
             isWhiteVariant
-              ? "bg-white text-black"
-              : "bg-[#080035] text-white"
+              ? "bg-white text-black hover:bg-black hover:text-white "
+              : "bg-[#080035] text-white hover:bg-black"
           }`}
         >
           {buttonLabel}

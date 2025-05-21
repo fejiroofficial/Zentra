@@ -7,6 +7,7 @@ import axa from "../../asset/header/axa.svg";
 import flutter from "../../asset/header/flutter.svg";
 import talent from "../../asset/header/talentQL.svg";
 import kora from "../../asset/header/kora.svg";
+import enyanta from "../../asset/header/enyanta.svg";
 
 export default function Hero() {
   return (
@@ -43,14 +44,14 @@ export default function Hero() {
   <h4 className="text-white text-[16px] font-medium mb-2">Trusted by:</h4>
   <div className="relative w-full overflow-x-scroll">
     <div className="flex gap-[24px] lg:gap-[40px] justify-center items-center whitespace-nowrap lg:w-full animate-scroll">
-    {[piggy, flutter, axa, kora, talent, piggy, flutter, axa, kora, talent].map((logo, index) => (
+    {[piggy, flutter, axa, kora, talent, piggy, flutter, axa, kora, talent,enyanta].map((logo, index) => (
         <Image
           key={index}
           src={logo}
           alt={`Company ${index}`}
           width={150}
           height={40}
-          className="w-[151px] lg:w-[225px] h-[40px]"
+          className="w-[120px] lg:w-[225px] h-[40px]"
         />
       ))}
     </div>

@@ -14,20 +14,23 @@ export default function About() {
   ];
 
   return (
-    <div className="container mx-auto text-black py-16 px-4" id="about">
+    <div className="container mx-auto text-[#212121] py-16 px-4" id="about">
       <div className="text-center flex flex-col gap-8">
         <TagLabel text="About Zentra" />
         <h2>What does Zentra do?</h2>
         <div className="grid grid-cols-12 gap-8 lg:mt-8 items-center">
-          <div className="col-span-12 lg:col-span-6 space-y-6 text-left">
+          <div className="col-span-12 lg:col-span-6 space-y-6 lg:space-y-10 text-left">
             <h3 className="text-[24px] md:text-[30px] font-semibold">
               Disconnected tools are costing your team time, money, and customers.
             </h3>
-            <h4 className="text-gray-700">
+            <div className="space-y-6">
+            <h4>
               Growing businesses often cobble together multiple apps for sales tracking, marketing emails, customer support, and task management and that leads to chaos. 
             </h4>
             <p>What your business really needs is...</p>
             
+            </div>
+         
             <div className="space-y-4">
               {features.map((text, index) => (
                 <div key={index} className="flex items-center gap-3">

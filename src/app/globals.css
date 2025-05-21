@@ -25,6 +25,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter-tight)
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
 @keyframes testimonials-scroll {
   0% {
     transform: translateX(0%);
@@ -43,6 +55,9 @@ body {
   }
 }
 
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
 
 .animate-testimonials {
   animation: testimonials-scroll 25s linear infinite;

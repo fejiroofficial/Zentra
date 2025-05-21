@@ -79,7 +79,7 @@ const NavBar = () => {
           </div>
         </div>
       )}
-      <ul className="hidden lg:flex gap-8">
+      <ul className="hidden lg:flex gap-8 rounded-[30px] lg:border lg:border-[#40C2FF] items-center lg:fixed lg:top-8 lg:left-1/2 -translate-x-1/2 z-50 bg-[#080035] md:px-6 py-4 max-h-[42px]">
         <li>
           <a href="#features" className="text-white normal hover:text-[#40C2FF] font-medium">
             Features

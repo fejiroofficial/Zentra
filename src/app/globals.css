@@ -60,11 +60,11 @@ body {
 }
 
 .animate-testimonials {
-  animation: testimonials-scroll 25s linear infinite;
+  animation: testimonials-scroll 60s linear infinite;
 }
 
 .animate-testimonials-reverse {
-  animation: testimonials-scroll-reverse 25s linear infinite;
+  animation: testimonials-scroll-reverse 60s linear infinite;
 }
 
 .animate-testimonials:hover,

@@ -40,7 +40,7 @@ export default function Hero() {
       </div>
 
   
-      <footer className="w-full lg:w-1/2 md:mt-20 flex flex-col items-center gap-2 overflow-scroll">
+      <footer className="w-full lg:w-[70%] md:mt-20 flex flex-col items-center gap-2 overflow-scroll">
   <h4 className="text-white text-[16px] font-medium mb-2">Trusted by:</h4>
   <div className="relative w-full overflow-x-scroll">
     <div className="flex gap-[24px] lg:gap-[40px] justify-center items-center whitespace-nowrap lg:w-full animate-scroll">
